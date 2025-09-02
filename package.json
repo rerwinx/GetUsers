@@ -1,0 +1,27 @@
+{
+  "name": "github-enterprise-users-export",
+  "version": "1.0.0",
+  "description": "Export GitHub Enterprise users to CSV using GraphQL API",
+  "main": "export-users.js",
+  "scripts": {
+    "start": "node export-users.js",
+    "basic": "node export-users-basic.js",
+    "test": "node test-connection.js",
+    "help": "echo \"Available commands:\\n  npm run test   - Test API connection and permissions\\n  npm run basic  - Basic user export (recommended)\\n  npm start      - Full export with 2FA/SAML data\""
+  },
+  "keywords": [
+    "github",
+    "enterprise",
+    "users",
+    "export",
+    "csv",
+    "graphql"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/graphql": "^7.0.2",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.3.1"
+  }
+}
